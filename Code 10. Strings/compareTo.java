@@ -1,6 +1,8 @@
+import java.util.*;
 public class compareTo {
     public static void main(String[] args) {
         String fruits[] = {"mango","apple","banana"};
+        String copy[] = fruits.clone();
         String largest = fruits[0];
 
         for (int i = 1; i < fruits.length; i++) {
@@ -9,5 +11,9 @@ public class compareTo {
             }
         }
         System.out.println("Largest String is :"+largest);
+        Arrays.sort(copy);
+        for (int i = 0; i < copy.length; i++) {
+            System.out.println(copy[i]);
+        }
     }
 }

@@ -9,7 +9,6 @@ public class PairSum2 {
                 break;
             }
         }
-
         int LP = bp + 1;
         int RP = bp;
         int n = list.size();
@@ -26,7 +25,7 @@ public class PairSum2 {
         }
         return false;
     }
-
+    
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
 
